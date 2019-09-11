@@ -10,7 +10,7 @@
 import montages as mn
 
 # STEP 2: Load the images from the folder
-images = mn.loadImages(stackFile='20190710_110323_AuNPs40-1.tif') # Always specify if you are loading a folder or a single file
+images = mn.loadImages(stackFile='test_stack.tif') # Always specify if you are loading a folder or a single file
 
 # STEP 3 : Rescale the intensity of the image
 images.scaleIntensity(10) # The intensity of all images is rescaled using the given factor
@@ -57,4 +57,4 @@ montage = mn.makeMontage(images)
 
 # STEP 7: Save the image in the destination folder
 
-mn.saveMontage(montage, fileName='test_stack.tif')
+mn.saveMontage(montage, fileName='test_stack_filename.tif')
