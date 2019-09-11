@@ -2,13 +2,31 @@
 
 ## Presentation
 
-Python 3 module to create montages of images taken from a folder or from a stack file (.tif)
+**montages** is a Python 3 module to create montages of images taken from a folder or from a stack file (.tif).
+
+![alt text](https://github.com/vivien-walter/montages/blob/master/images/presentation.png "Example of a montage")
+
+**montages** generates automatically the text on each frame.
 
 ## Installation
 
 ### How-to
 
-Bla
+**montages** is distributed with a *setuptools* script to directly install the module in the working environment along all the required packages. To install **montages** copy the *montages/* folder and the *setup.py* script of the repository onto your computer and open a terminal to type the following command
+
+```bash
+python3 setup.py install
+```
+
+Please refer to the [setuptools](https://pypi.org/project/setuptools/) and the [Virtualenv](https://virtualenv.pypa.io/en/latest/) documentations for all the options and arguments that can be used to make the installation as clean as possible.
+
+Alternatively, the module can be used without installation in the working environment by copying the *montages/* folder in a *custom_module/* folder on your computer and calling the path to the latter into your python script header, such as in
+
+```python
+import sys
+sys.path.insert(0, "/path/to/custom_module/")
+import montages as mn
+```
 
 ### Requirements
 
@@ -19,6 +37,8 @@ The following modules are required to run the montages module.
 * [Matplotlib](https://matplotlib.org)
 * [Pillow](https://pillow.readthedocs.io/en/stable/)
 * [scikit-image](https://scikit-image.org)
+
+The setuptools-based installation will automatically install these modules on your computer is you haven't installed them yet.
 
 ## Instructions
 
