@@ -1,5 +1,24 @@
 # montages
+
+## Presentation
+
 Python 3 module to create montages of images taken from a folder or from a stack file (.tif)
+
+## Installation
+
+### How-to
+
+Bla
+
+### Requirements
+
+The following modules are required to run the montages module.
+
+* [NumPy](https://numpy.org)
+* [PIMS](http://soft-matter.github.io/pims/v0.4.1/)
+* [Matplotlib](https://matplotlib.org)
+* [Pillow](https://pillow.readthedocs.io/en/stable/)
+* [scikit-image](https://scikit-image.org)
 
 ## Instructions
 
