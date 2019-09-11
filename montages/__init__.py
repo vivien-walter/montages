@@ -1,3 +1,14 @@
+##------------------------------------------------##
+## MONTAGES MODULE FOR PYTHON 3.X                 ##
+##------------------------------------------------##
+##                                                ##
+## Release: 11/09/2019 (v 1.0)                    ##
+## Git: https://github.com/vivien-walter/montages ##
+##                                                ##
+## Author: Vivien WALTER                          ##
+## Contact: walter.vivien@gmail.com               ##
+##------------------------------------------------##
+
 import math
 import os
 import pims
