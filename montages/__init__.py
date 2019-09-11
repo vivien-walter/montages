@@ -88,7 +88,7 @@ def _getFontSize(text, fontPath, sizeLimit):
         fontSize += 1
         font = ImageFont.truetype(fontPath, fontSize)
 
-    return fontSize
+    return fontSize - 1
 
 #--------------------------------------------------
 # Generate the text array associated with the image
@@ -343,6 +343,10 @@ def makeMontage(images):
 
     # Populate the array
     for i, imageIndex in enumerate(images.frameSelection):
+
+        # Stop if the number of images is greater than the size of the given table
+        if i >= images.montageTable[0]*images.montageTable[1]:
+            break
 
         # Get the index of the array in the table
         rowIndex = i // images.montageTable[1]
